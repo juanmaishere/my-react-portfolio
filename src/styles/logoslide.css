@@ -31,9 +31,9 @@
     justify-content: center;
     align-items: center;
     height: 50vh;
-    gap: 13vw;
+    gap: 5vw;
     opacity: 1; /* Initially hidden */
-    margin-top: 15rem;
+    margin-top: 15%;
     animation: scaleUp 6s ease-in-out forwards; 
     z-index: 150; /* Ensure it's above other elements */
     position: relative; /* Ensure z-index works */
@@ -51,9 +51,10 @@
   }
   
   .image img {
-    width: 25vw;
-    height: 45vh;
-    border-radius: 50%;
+    width: 25vw; /* or any other scalable unit */
+    height: 25vw; /* same as width to maintain the 1:1 aspect ratio */
+    border-radius: 50%; /* makes it a circle */
+    object-fit: cover; /* ensures the image covers the area without distortion */
   }
   
   @keyframes scaleUp {

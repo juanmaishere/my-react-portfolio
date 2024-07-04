@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 
 const COUNT = 800;
-const SPEED = 0.07;
+const SPEED = 0.1;
 
 class Star {
     constructor(x = 0, y = 0, z = 0) {
