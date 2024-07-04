@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import Model2 from './Modelo'; // Adjust the path as necessary
 import '../styles/about.css';
-import Logo from '../components/LogoSlide'; // Make sure to import LogoSlide or adjust as needed
 
 function About() {
     const [isVisible, setIsVisible] = useState(false);

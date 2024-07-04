@@ -8,7 +8,9 @@ extend({ FBXLoader });
 export default function FbxModel(props) {
   const group = useRef();
   const mixer = useRef();
+  // eslint-disable-next-line
   const [rotationSpeed, setRotationSpeed] = useState(0.002);
+  // eslint-disable-next-line
   const [modelDimensions, setModelDimensions] = useState({ width: 0, height: '30vh', depth: 0 });
 
   const fbx = useLoader(FBXLoader, '/models2/Character.fbx');

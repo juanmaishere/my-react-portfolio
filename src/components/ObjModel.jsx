@@ -8,7 +8,7 @@ extend({ OBJLoader, MTLLoader });
 export default function ObjModel(props) {
   const group = useRef();
   const [rotationSpeed, setRotationSpeed] = useState(0.002);
-  const [modelDimensions, setModelDimensions] = useState({ width: 0, height: '100vh', depth: 0 });
+  const [setModelDimensions] = useState({ width: 0, height: '100vh', depth: 0 });
 
   const materials = useLoader(MTLLoader, '/models2/Satellite_1236.mtl');
   const obj = useLoader(OBJLoader, '/models2/Satellite_1236.obj', (loader) => {
