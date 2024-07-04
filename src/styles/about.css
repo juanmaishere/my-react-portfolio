@@ -1,0 +1,67 @@
+.column {
+    height: 100vh;
+    display: flex;
+    padding-top: 2rem;
+    flex-direction: column;
+    background-color: #EEEEEE;
+    justify-content: space-around;
+}
+.sec {
+    background-color: #EEEEEE;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    gap: 2vw;
+}
+p {
+    font-family: "Sometype Mono";
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: chocolate;
+}
+.text {
+    width: 60%;
+    text-align: center;
+}
+.text p {
+    font-size: 1.8rem;
+    margin: 0;
+}
+.model {
+    width: 40%;
+    margin-top: 10rem;
+}
+.logo-container {
+    width: 100vw; /* Full width of the viewport */
+    background-color: #EEEEEE;
+
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    background-color: none;
+
+}
+
+.logo-slide {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll 60s linear infinite; /* Increased duration for smoothness */
+}
+
+.logo-slide img {
+    width: 4rem; /* Adjust the size as needed */
+    height: 4rem;
+    margin: 0 30px; /* Adjust the spacing as needed */
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}

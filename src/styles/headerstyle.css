@@ -1,0 +1,91 @@
+
+	* {
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+	header {
+		position: fixed;
+		top: 0;
+    	left: 0;
+    	width: 100%;
+		height: 7vh;
+    	z-index: 1000;
+		display: flex;
+		flex-direction: row;
+		justify-content: right;
+		align-items: center;
+		margin: 0;
+		background: #EEEEEE;
+		box-shadow: 0 2px 8px rgba(var(--black), 5%);
+		color: white;
+		transition: height 0.3s ease;
+	}
+
+	h2 {
+		margin: 0;
+		font-size: 1em;
+	}
+
+	h2 a,
+	h2 a.active {
+		color: white;
+		text-decoration: none;
+	}
+	nav {
+		justify-content: right;
+		align-items: right;
+        margin-right: 1rem;
+	}
+	nav a {
+		color: #DC5F00;
+		text-decoration: none;
+        font-family: 'Sometype Mono';
+        font-weight: 500;
+        margin-right: 2rem;
+        font-optical-sizing: auto;
+		font-size: 1rem;
+
+	}
+    nav a:hover {
+        color: #efa1b1;
+    }
+	nav a.active {
+		text-decoration: none;
+		padding: 0.3rem;
+	}
+
+	.social-links,
+	.social-links a {
+		display: flex;
+	}
+	@media (max-width: 750px) {
+		.social-links {
+			display: none;
+		}
+		.logo {
+			width: 2rem;
+			height: 2rem;
+		}
+		.nav a {
+		 padding: 0;
+		 font-size: 1rem;
+		}
+		a {
+			font-size: 1rem;
+		}
+	}
+
+  /* Styles for the scrolled header */
+  header.scrolled {
+    background-color: rgba(0, 0, 0, 0.727); /* Transparent version */
+    height: 6vh; /* Adjust the height as needed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.286); /* Add shadow for depth */
+  }
+  header.scrolled .logo {
+	width: 2rem;
+	height: 2rem;
+  }
+  /* Additional styling for the content below the header */
+
+

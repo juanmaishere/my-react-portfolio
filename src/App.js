@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Model from './components/Model'; // Adjust the path as necessary
+import Starfield from './components/Starfield'; // Adjust the path as necessary
+import Header from './components/Header'
+import Head from './components/Head'
+import Presentation from './components/Presentation';
+import About from './components/About';
+import Projects from './components/Projects';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Head></Head>
+      <Header></Header>
+      <main>
+        <div className="viewer-container">
+          <Starfield />
+          <div className="model-wrapper">
+            <Model />
+          </div>
+            <Presentation></Presentation>
+        </div>
+        <About></About>
+        <Projects></Projects>
+      </main>
     </div>
   );
 }
