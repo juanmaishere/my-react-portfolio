@@ -8,7 +8,7 @@ extend({ OBJLoader, MTLLoader });
 export default function ObjModel(props) {
   const group = useRef();
   const [rotationSpeed, setRotationSpeed] = useState(0.002);
-  const [setModelDimensions] = useState({ width: 0, height: '100vh', depth: 0 });
+  const [modelDimensions, setModelDimensions] = useState({ width: 0, height: '100vh', depth: 0 });
 
   const materials = useLoader(MTLLoader, '/models2/Satellite_1236.mtl');
   const obj = useLoader(OBJLoader, '/models2/Satellite_1236.obj', (loader) => {
@@ -30,7 +30,7 @@ export default function ObjModel(props) {
     }, 3300); // Stop rotation after 4 seconds
 
     return () => clearTimeout(timer); // Clean up the timer on component unmount
-  }, [obj]);
+  }, [obj, setModelDimensions]);
 
   useFrame(() => {
     if (group.current) {
