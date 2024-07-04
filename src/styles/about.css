@@ -1,5 +1,5 @@
 .column {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     padding-top: 2rem;
     flex-direction: column;
@@ -64,4 +64,23 @@ p {
     100% {
         transform: translateX(-50%);
     }
+}
+@media (max-width: 768px) {
+   .sec {
+    padding: 0;
+    flex-direction: column;
+   }
+   .text {
+    width: 100%;
+   }
+   .text p {
+    margin: 0.4rem;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+   }
+   .model {
+    margin-top: 2rem;
+    width: 100%;
+   }
+
 }

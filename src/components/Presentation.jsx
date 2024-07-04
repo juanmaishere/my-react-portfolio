@@ -39,7 +39,7 @@ function Presentation() {
     }, [currentIndex, startTyping]);
 
     return (
-        <div>
+        <div id='inicio'>
             <div className="row">
                 <div className="">
                     <h1>JUAN MANUEL RIVERA</h1>

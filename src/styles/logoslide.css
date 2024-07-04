@@ -79,3 +79,23 @@
   .scale-up {
     animation: scaleUp 1s ease-out forwards;
   }
+  @media (max-width: 768px) {
+    .row {
+      flex-direction: column;
+      height: 100vh;
+      gap: 15vh;
+    }
+    h2 {
+      font-size: 2rem;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+    .image img {
+      width: 45vw;
+      height: 45vw;
+  }
+}

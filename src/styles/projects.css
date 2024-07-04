@@ -13,8 +13,8 @@ span {
   flex-direction: column;
   text-align: center;
   color: black;
-  padding-right: 5rem;
-  padding-left: 5rem;
+  padding-right: 15rem;
+  padding-left: 15rem;
   justify-content: space-evenly;
 }
 
@@ -564,3 +564,12 @@ span {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .sectionx {
+    padding: 0 1rem;
+  }
+  .projects {
+    display: flex;
+    flex-direction: column;
+  }
+}

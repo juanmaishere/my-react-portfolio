@@ -23,6 +23,7 @@ const projects = [
     altText: 'Academia de manejo',
     link: 'https://lafabricafiestasyeventos.netlify.app/',
   },
+  
   // Add more projects as needed
 ];
 
@@ -44,9 +45,9 @@ const Projects = () => {
     <div className="sectionx">
       <div class="hero-container">
     <div class="environment"></div>
-    <h2 class="hero glitch layers" data-text="近設計"><span>Projects</span></h2>
+    <h2 class="hero glitch layers" data-text="Tech"><span>Projects</span></h2>
   </div>
-      <div className="projects">
+      <div id='projects' className="projects">
         {projects.map((project, index) => (
           <div className="card" key={index}>
             <img src={project.imgSrc} alt={project.altText} className="static-img" />
